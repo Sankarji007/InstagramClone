@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-*:focus{
-    outline: none;
-}
-
-body{
-    width: 100%;
-    background: #fafafa;
-    position: relative;
-    font-family: 'roboto', sans-serif;
-}
 
 .navbar{
     position: fixed;
@@ -29,7 +14,9 @@ body{
     justify-content: center;
     padding: 5px 0;
 }
-
+.navbar img{
+    width: 15%;
+}
 .nav-wrapper{
     width: 70%;
     max-width: 1000px;
@@ -39,10 +26,6 @@ body{
     align-items: center;
 }
 
-.brand-img{
-    height: 100%;
-    margin-top: 5px;
-}
 
 .search-box{
     position: absolute;
@@ -79,57 +62,4 @@ body{
     font-family: 'Brush Script MT', cursive;
     font-size: large;
 }
-.mainpage
-{
-    position:relative;
-    margin-top: 3%;
-    /* margin-left: 50%;
-    */
-    display: flex;
-        flex-wrap: wrap;
-}
-.end
-{
-    width:100%;
-    text-align:left;
-    margin-left:0
-}
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-   
-    
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .card img {
-    max-width: 200%;
-    height: auto;
-  }
-  .profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: blue;
-    margin-left: 125px;
-    margin-top: 80px;
-    
-    /* display:inline-block; */
-    vertical-align:50%;
-  }
-  .profile img{
-    width:100%;
-  }
- .top
- {}

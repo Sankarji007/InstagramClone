@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import './style.css';
-
+import './mainpage.css';
 const MainPage = () => {
     const [data, setData] = useState([]);
     const [posts, setPosts] = useState([]);
@@ -23,40 +22,50 @@ const MainPage = () => {
     }
     const nameList = posts.map((item) => (
         <div key={item.id}>
-
-            <div class="card">
+            <div class="gallery-item" tabindex="0">
                 <img src={item.thumbnailUrl} alt={item.name} />
             </div>
-
-
-
-            {/* <p>{item.thumbnailUrl}</p> */}
         </div>
     ));
     return (
         <>
-        <div className='top'>
-            <div className='mainpage'>
-                <div className='profile'>
-                    <img src='https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/05/24/685839-virat-kohli-reuters.jpg' alt="Avatar" />
+            <header>
+                <div class="container">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="" />
+                        </div>
+                        <div class="profile-user-settings">
+                            <h1 class="profile-user-name">{data.username}</h1>
+
+                            <h2>{data.name}</h2>
+                            <h2>{data.email}</h2>
+                            <h2>{data.website}</h2>
+                        </div>
+                        <div class="profile-stats">
+                            <ul>
+                                <li><span class="profile-stat-count">164</span> posts</li>
+                                <li><span class="profile-stat-count">188</span> followers</li>
+                                <li><span class="profile-stat-count">206</span> following</li>
+                            </ul>
+                        </div>
+                        <div class="profile-bio">
+                            <p><span class="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p>
+                           
+                        </div>
+                    </div>
+
                 </div>
-                <span>
-                    <h1>{data.name}</h1>
-                    <h2>{data.username}</h2>
-                    <h2>{data.email}</h2>
-                </span>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="gallery">
+                        {nameList}
+                    </div>
+                </div>
 
-            </div>
-        </div>
-            
-            <hr className='end'></hr>
-            <div className="card-container">
-                {nameList}
-            </div>
+            </main>
         </>
-
     )
 }
 export default MainPage;
-
-
