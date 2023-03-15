@@ -50,7 +50,7 @@ const MainPage = () => {
                             </ul>
                         </div>
                         <div class="profile-bio">
-                            <p><span class="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p>
+                            {/* <p><span class="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p> */}
                            
                         </div>
                     </div>
