@@ -22,44 +22,45 @@ const MainPage = () => {
     }
     const nameList = posts.map((item) => (
         <div key={item.id}>
-            <div class="gallery-item" tabindex="0">
-                <img src={item.thumbnailUrl} alt={item.name} />
+            <div className="gallery-item" tabindex="0">
+                <img className='gallery-image' src={item.thumbnailUrl} alt={item.name} />
             </div>
         </div>
     ));
     return (
         <>
             <header>
-                <div class="container">
-                    <div class="profile">
-                        <div class="profile-image">
+                <div className="container">
+                    <div className="profile">
+                        <div className="profile-image">
                             <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt="" />
                         </div>
-                        <div class="profile-user-settings">
-                            <h1 class="profile-user-name">{data.username}</h1>
+                        <div className="profile-user-settings">
+                            <h1 className="profile-user-name">{data.username}</h1>
 
                             <h2>{data.name}</h2>
                             <h2>{data.email}</h2>
                             <h2>{data.website}</h2>
                         </div>
-                        <div class="profile-stats">
+                        <div className="profile-stats">
                             <ul>
-                                <li><span class="profile-stat-count">164</span> posts</li>
-                                <li><span class="profile-stat-count">188</span> followers</li>
-                                <li><span class="profile-stat-count">206</span> following</li>
+                                <li><span className="profile-stat-count">164</span> posts</li>
+                                <li><span className="profile-stat-count">188</span> followers</li>
+                                <li><span className="profile-stat-count">206</span> following</li>
                             </ul>
                         </div>
-                        <div class="profile-bio">
-                            {/* <p><span class="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p> */}
+                        <div className="profile-bio">
+                            {/* <p><span className="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p> */}
                            
                         </div>
                     </div>
 
                 </div>
             </header>
+            <div classNameName="line"></div><br />
             <main>
-                <div class="container">
-                    <div class="gallery">
+                <div className="container">
+                    <div className="gallery">
                         {nameList}
                     </div>
                 </div>

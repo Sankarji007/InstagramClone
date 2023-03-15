@@ -28,6 +28,13 @@ img {
     padding: 0 2rem;
 }
 
+.line{
+    height: 2px;
+    width: 47%;
+    background-color: rgb(111, 105, 105);
+    margin-left: 26.5%;
+}
+
 .btn {
     display: inline-block;
     font: inherit;
@@ -142,6 +149,7 @@ img {
     flex-wrap: wrap;
     margin: -1rem -1rem;
     padding-bottom: 3rem;
+    overflow: auto;
 }
 
 .gallery-item {
