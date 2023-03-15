@@ -51,10 +51,6 @@ const MainPage = () => {
                                 <li><span className="profile-stat-count">206</span> following</li>
                             </ul>
                         </div>
-                        <div className="profile-bio">
-                            <p><span className="profile-real-name">{data.name}  </span></p>
-                           
-                        </div>
                     </div>
 
                 </div>
