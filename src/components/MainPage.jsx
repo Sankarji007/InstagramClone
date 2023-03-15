@@ -22,8 +22,8 @@ const MainPage = () => {
     }
     const nameList = posts.map((item) => (
         <div key={item.id}>
-            <div className="gallery-item" tabindex="0">
-                <img className='gallery-image' src={item.thumbnailUrl} alt={item.name} />
+            <div className="gallery-item" tabIndex="0">
+                <img className='gallery-image' src={item.thumbnailUrl} alt={item.title} />
             </div>
         </div>
     ));
@@ -40,7 +40,7 @@ const MainPage = () => {
 
                             <h2>{data.name}</h2>
                             <h2>{data.email}</h2>
-                            <h2>{data.website}</h2>
+                            <h2><a href={data.website}>{data.website}</a></h2>
                         </div>
                         <div className="profile-stats">
                             <ul>
@@ -50,14 +50,14 @@ const MainPage = () => {
                             </ul>
                         </div>
                         <div className="profile-bio">
-                            {/* <p><span className="profile-real-name">{data.name}  </span>{data.address.street}, {data.address.suite}</p> */}
+                            <p><span className="profile-real-name">{data.name}  </span></p>
                            
                         </div>
                     </div>
 
                 </div>
             </header>
-            <div classNameName="line"></div><br />
+            <hr className='line'></hr>
             <main>
                 <div className="container">
                     <div className="gallery">
