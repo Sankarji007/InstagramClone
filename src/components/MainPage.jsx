@@ -37,7 +37,9 @@ const MainPage = () => {
                         </div>
                         <div className="profile-user-settings">
                             <h1 className="profile-user-name">{data.username}</h1>
+                            <button class=" profile-edit-btn">Follow</button>
 
+				<button class=" profile-edit-btn" >Message</button>
                             <h2>{data.name}</h2>
                             <h2>{data.email}</h2>
                             <h2><a href={data.website}>{data.website}</a></h2>
